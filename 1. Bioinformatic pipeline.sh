@@ -1,5 +1,9 @@
 ### Bioinformatic pipeline followed to do haplotype calling of Oophaga vicentei RNA reads when using the reference genome of Oophaga sylvatica ###
 
+Author: Anaisa Cajigas Gandia
+License: GNU
+Last updated: 30.10.2025
+
 Main steps included:
 1- RNA reads quality trimming
 2- Mapping reads against reference using STAR
