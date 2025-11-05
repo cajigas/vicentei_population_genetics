@@ -1,9 +1,12 @@
-### The demographic history of Oophaga vicentei was estimated using ANGSD v 0.938 (Korneliussen et al., 2014), and Stairway Plot v2.1 (Liu & Fu, 2020). Results were further plotted using R. ###
+### The demographic history of Oophaga vicentei was estimated using 
+# ANGSD v 0.938 (Korneliussen et al., 2014), and Stairway Plot v2.1 (Liu & Fu, 2020).
+# Results were further plotted using R. 
 
 Author: Anaisa Cajigas Gandia (script modified from an original provided by Ariel Rodríguez)
 License: GNU
 Last updated: 30.10.2025
 
+# missing script from ANGSD  and Stairway plot from Ariel #
 
 ### Plotting in R ###
 setwd
