@@ -4,5 +4,5 @@ In this study we aim to assess assess genetic diversity, population structure, a
 
 Bioinformatic pipeline and population genetics analysis were conducted following https://github.com/cajigas/granulifera_selection.git, just adjusting the scripts for corresponding sample sizes and names.
 
-For detailed information about the methods and obtained results, please check the related publication:
+Demographic analyses were conducted using ANGSD and Stairway plot, and scripts can be found in the repository: 
 
