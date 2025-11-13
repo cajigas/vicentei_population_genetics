@@ -6,21 +6,19 @@ Author: Anaisa Cajigas Gandia (script modified from an original provided by Arie
 License: GNU
 Last updated: 30.10.2025
 
-# missing script from ANGSD  and Stairway plot from Ariel #
-
 ### Plotting in R ###
 setwd
 library(ggplot2)
 library(scales)
-CEI<-read.csv("Oophaga vicentei  CEI realSFS all sites.final.summary",
+East<-read.csv("Oophaga vicentei  CEI realSFS all sites.final.summary",
               sep="\t")
-CEI$Population<-"CEI"
+East$Population<-"EAST"
 West<-read.csv("Oophaga vicentei  West realSFS all sites.final.summary",
                sep="\t")
 West$Population<-"WEST"
 
 
-joint.SWP<-rbind(CEI, West)
+joint.SWP<-rbind(East, West)
 summary(joint.SWP)
 
 ggplot(joint.SWP, aes(x=year, y=Ne_median, group=Population))+
