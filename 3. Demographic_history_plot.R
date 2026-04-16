@@ -4,12 +4,14 @@
 
 Author: Anaisa Cajigas Gandia (script modified from an original provided by Ariel Rodríguez)
 License: GNU
-Last updated: 30.10.2025
+Last updated: 16.04.2026
 
 ### Plotting in R ###
 setwd
+# Load required libraries
 library(ggplot2)
 library(scales)
+
 East<-read.csv("Oophaga vicentei  CEI realSFS all sites.final.summary",
               sep="\t")
 East$Population<-"EAST"
@@ -27,13 +29,13 @@ ggplot(joint.SWP, aes(x=year, y=Ne_median, group=Population))+
   theme_classic() + coord_cartesian(xlim =c(100, 3000000))+
   scale_x_continuous(trans="log", 
                      labels=label_number(accuracy=1,scale = 1/1000),  
-                     breaks=c(1000,2500,10000,25000,100000, 250000, 1000000, 3000000)) +
+                     breaks=c(1000,2000,10000,25000,100000,250000,1000000,3000000)) +
   scale_y_continuous(trans="log",
                      labels = unit_format(unit = "000", scale = 1e-3)) +
   #scale_x_continuous(limits = c(1000, 2000000))+
   #coord_trans(x="log") +
-  scale_color_manual(values=c("#54c099", "red2")) +
-  scale_fill_manual(values=c("#54c099", "red2")) +
+  scale_color_manual(values=c("#095E92", "#FF0B0B")) +
+  scale_fill_manual(values=c("#095E92", "#FF0B0B")) +
   annotate("rect", xmin = 114000, xmax = 131000, 
            ymin = min(joint.SWP$Ne_12.5), ymax = max(joint.SWP$Ne_87.5), 
            alpha = .55) +
